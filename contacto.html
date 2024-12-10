@@ -3,121 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario contacto</title>
-<style>
-body{
-     font-family: Arial, Helvetica, sans-serif;
-         margin: 0;
-         padding: 0;
-          background: linear-gradient(135deg, #6a11cb, #2575fc);
-          color: #333;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 100vh;
-}
-
-.form-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(136, 42, 148, 0.1);
-    max-width: 400px;
-    width: 100%;
-
-}
-
-.form-container h1{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #3d0a7a;
-
-}
-
-.form-group{
-
-margin-bottom: 15px;
-
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #0b1013;
-}
-
-.form-group input{
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #9f66a7;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus{
-    border-color: aqua;
-
-}
-
-.form-group button{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #9f66a7;
-    color: #0b1013;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.form-group button:hover{
-    background: #2575fc;
-}
-
-.form-group small{
-    display: block;
-    margin-top: 10px;
-    font-size: 0.875rem;
-    color: #777;
-}
-
-
-</style>
-
-
+    <title>contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <style src="scripts.js"></style>
 </head>
+
 <body>
-    <div class="form-container">
-        <h1>Formulario de contacto</h1>
-        <form action="">
+    <header>
+        <div class="container">
+            <h1>Tienda de Mascotas</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contacto.html">contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contact-main">
+        <section class="form-section">
+            <h2>Contáctanos</h2>
+            <form id="contacForm">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
 
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="ingrese nombre completo">
-            </div>
+                <label for="reason">Motivo de contacto</label>
+                <input type="text" id="reason" name="reason" placeholder="Adopción, consulta, etc.">
 
-            <div class="form-group">
-                <label for="correo">correo electrónico</label>
-                <input type="email" id="correo" name="correo" placeholder="ingrese su correo electrónico">
-            </div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@Correo"> 
 
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </section>
 
-            <div class="form-group">
-                <label for="mensaje">mensaje</label>
-                <input type="text" id="mensaje" name="mensaje" placeholder="escriba su mensaje aquí">
-            </div>
-            <div class="form-group">
-                <button type="submit">enviar</button> 
-            </div>
-            <small>su información es confidencial</small>
-        </form>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+    </footer>
     
-
-
 </body>
 </html>

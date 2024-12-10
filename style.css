@@ -1,51 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #c4cfee;
+}
 
-body{
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #dbb5f5;
-    margin-top: 50px;
+/* Estilos del Header */
+header {
+    background-color: #a0c7f5;
+    color: rgb(72, 70, 75);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-h1 {
-    color: #11171d;
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
-input {
-    margin: 10px;
-    padding: 5px;
-    font-size: 16px;
-    border: 2px solid #2c3e50;
-    border-radius: 5px;
-}
-.button-container {
-    margin-top: 20px;
-}
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-}
-button:hover {
-    opacity: 0.7;
-}
-.suma {
-    background-color: #32cfe4;
-    color: rgb(24, 16, 16);
-}
-.resta {
-    background-color: #f141cb;
-    color: white;
-}
-.multiplicación {
-    background-color: #47abee;
-    color: white;
-}
-.división {
-    background-color: #d17bf7;
-    color: white;
-}
-#result {
-    margin-top: 20px;
+
+nav a {
+    color: rgb(238, 238, 224);
+    margin: 0 10px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
-    color: #22313f;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Sección Hero */
+.hero {
+    background: url('portada.jpg') no-repeat center center/cover;
+    color: rgb(88, 78, 78);
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.hero .overlay {
+    background-color: rgba(230, 208, 208, 0.6);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #008ae6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #008ae6;
+}
+
+/* features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #fff;
+}
+
+.features .feature {
+    text-align: center;
+    width: 30%;
+}
+
+/*contacto */
+.contact-main {
+    background: url('portada\ 2.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+}
+.form-section {
+    background: rgba(255, 255, 255, 0.9); /*Semi-transparent backround */
+    color: #333; /* Text color */
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-section input {
+width: 95%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+/* Galleria */
+.gallery .grid-2-clumns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+}
+
+/*Footer*/
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }

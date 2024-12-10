@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://127.0.0.1:5500/contacto.html?name=&reason=&email= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="./tienda de mascotas_files/style.css">
+    <style src="scripts.js"></style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Tienda de Mascotas</h1>
+            <nav>
+                <a href="http://127.0.0.1:5500/index.html">Inicio</a>
+                <a href="http://127.0.0.1:5500/galeria.html">Galeria</a>
+                <a href="http://127.0.0.1:5500/contacto.html">contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contact-main">
+        <section class="form-section">
+            <h2>Contáctanos</h2>
+            <form id="contacForm">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+
+                <label for="reason">Motivo de contacto</label>
+                <input type="text" id="reason" name="reason" placeholder="Adopción, consulta, etc.">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@Correo"> 
+
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+    </footer>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
